@@ -1,7 +1,7 @@
 // GET('/')
 exports.getIndexPage = async (req, res) => {
   const user = {
-    name: "Pithivier",
+    name: "Christopher",
     age: 45
   }
   /*

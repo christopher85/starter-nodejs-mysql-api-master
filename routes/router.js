@@ -1,8 +1,11 @@
 const express = require('express')
 ,     router = express.Router()
-,     indexRoute = require('./index.route')
+,     indexRoute = require('./indexRoute')
+,     authRoute = require('./authRoute')
 
 router.get('/', indexRoute)
+router.get('/api/auth', authRoute)
+
 
 // 404
 router.get('*', function(req, res, next){

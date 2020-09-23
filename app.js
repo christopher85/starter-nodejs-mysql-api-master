@@ -23,7 +23,7 @@ db.connect((err) => {
 });
 
 const query = util.promisify(db.query).bind(db);
-global.query = query;
+global.querySQL = query;
 
 // Middleware - Parser
 app.use(express.json())
